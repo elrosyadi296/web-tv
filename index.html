@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+  <title>296 LIVE TV — Streaming Live TV Modern</title>
+  <meta name="description" content="296 LIVE TV: nonton siaran langsung dari berbagai kategori dan negara dalam satu tampilan modern, cepat, dan tanpa login." />
+  <meta name="theme-color" content="#0a0a12" />
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website" />
+  <meta property="og:site_name" content="296 LIVE TV" />
+  <meta property="og:title" content="296 LIVE TV — Streaming Live TV Modern" />
+  <meta property="og:description" content="Nonton siaran langsung dari berbagai kategori dan negara dalam satu tampilan modern, cepat, dan tanpa login." />
+  <meta property="og:image" content="assets/img/og-cover.png" />
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="296 LIVE TV" />
+  <meta name="twitter:description" content="Streaming Live TV modern by 296 Studios." />
+  <meta name="twitter:image" content="assets/img/og-cover.png" />
+
+  <link rel="canonical" href="./index.html" />
+  <link rel="manifest" href="manifest.json" />
+  <link rel="icon" href="assets/icons/icon-192.svg" type="image/svg+xml" />
+  <link rel="apple-touch-icon" href="assets/icons/icon-192.svg" />
+
+  <meta http-equiv="Content-Security-Policy" content="
+    default-src 'self';
+    script-src 'self' https://cdn.tailwindcss.com https://cdn.jsdelivr.net 'unsafe-inline';
+    style-src 'self' 'unsafe-inline' https://fonts.googleapis.com;
+    font-src 'self' https://fonts.gstatic.com;
+    img-src 'self' data: https:;
+    media-src 'self' https: blob:;
+    connect-src 'self' https:;
+  " />
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebSite",
+    "name": "296 LIVE TV",
+    "url": "./index.html",
+    "publisher": { "@type": "Organization", "name": "296 Studios" }
+  }
+  </script>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Sora:wght@500;600;700;800&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: {
+            display: ["Sora", "Inter", "sans-serif"],
+            sans: ["Inter", "sans-serif"],
+            mono: ["JetBrains Mono", "monospace"],
+          },
+        },
+      },
+    };
+  </script>
+  <link rel="stylesheet" href="assets/css/style.css" />
+</head>
+<body class="font-sans antialiased">
+  <a href="#main-content" class="skip-link">Lompat ke konten utama</a>
+
+  <div id="shell-sidebar"></div>
+  <div id="shell-header"></div>
+
+  <main id="main-content" class="ml-[76px] lg:ml-[220px] pt-[68px] px-4 md:px-6 py-6 min-h-screen">
+    <div id="app" role="region" aria-live="polite"></div>
+  </main>
+
+  <script type="module" src="assets/js/main.js"></script>
+</body>
+</html>
