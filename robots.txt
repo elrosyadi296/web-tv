@@ -1,5 +1,0 @@
-User-agent: *
-Allow: /
-Disallow: /player.html
-
-Sitemap: https://example.com/sitemap.xml
